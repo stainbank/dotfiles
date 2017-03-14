@@ -189,19 +189,21 @@ exec --no-startup-id feh --bg-scale ~/Pictures/glitch_forest.jpg
 # Use UK keyboard layout
 exec --no-startup-id setxkbmap -layout gb
 
-# Load workspace layouts
-# exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
+# Load workspace 3
 exec --no-startup-id "i3-msg workspace '$ws3; append_layout ~/.config/i3/workspace-3.json'"
+exec --no-startup-id xfce4-terminal --title=vim:simulocloud 
+exec --no-startup-id xfce4-terminal --title=git:simulocloud 
+exec --no-startup-id xfce4-terminal --title=vim:tests 
+exec --no-startup-id xfce4-terminal --title=py.test:tests
 
 # Load workspace-2 windows
+# exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
 # exec --no-startup-id xfce4-terminal --title=geog
 # exec --no-startup-id xfce4-terminal --title=geogport
 # exec --no-startup-id chromium-browser
-# Load workspace-3 windows
-exec --no-startup-id xfce4-terminal --title=git:simulocloud
-exec --no-startup-id xfce4-terminal --title=vim:simulocloud
-exec --no-startup-id xfce4-terminal --title=py.test:tests
-exec --no-startup-id xfce4-terminal --title=vim:tests
+
+# Load up to home workspace
+# exec --no-startup-id "i3-msg workspace $ws1"
 
 # Load up to home workspace
 exec --no-startup-id "i3-msg workspace $ws1"

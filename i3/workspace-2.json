@@ -17,7 +17,7 @@
                "x": 0,
                "y": 0
             },
-            "name": "T1",
+            "name": "geog",
             "percent": 0.333333333333333,
             "swallows": [
                {
@@ -37,7 +37,7 @@
                "x": 0,
                "y": 0
             },
-            "name": "T2",
+            "name": "geogport",
             "percent": 0.333333333333333,
             "swallows": [
                {
@@ -52,16 +52,16 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 729,
-               "width": 451,
-               "x": 458,
-               "y": 18
+               "height": 1037,
+               "width": 636,
+               "x": 652,
+               "y": 30
             },
             "name": "New Tab - Chromium",
             "percent": 0.333333333333333,
             "swallows": [
                {
-               "class": "^Chromium\\-browser$",
+               "class": "^chromium\\-browser$",
                "title": "^New\\ Tab\\ \\-\\ Chromium$"
                }
             ],
