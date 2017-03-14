@@ -200,7 +200,7 @@ exec --no-startup-id xfce4-terminal --title=py.test:tests
 exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
 exec --no-startup-id xfce4-terminal --title=geog
 exec --no-startup-id xfce4-terminal --title=geogport
-# exec --no-startup-id chromium-browser
+exec chromium-browser
 
 # Load up to home workspace
 exec --no-startup-id "i3-msg workspace $ws1"
