@@ -180,17 +180,23 @@ bar {
     strip_workspace_numbers yes
 }
 
+# Use fullscreen resolution
+exec --no-startup-id xrandr --output VGA-0 --mode 1920x1080
+
 # Wallpaper
-exec --no-startup-id feh --bg-scale /home/chad/Pictures/glitch-forest-road.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/glitch_forest.jpg
+
+# Use UK keyboard layout
+exec --no-startup-id setxkbmap -layout gb
 
 # Load workspace layouts
-exec --no-startup-id "i3-msg workspace '$ws2; append_layout /home/chad/.config/i3/workspace-2.json'"
-exec --no-startup-id "i3-msg workspace '$ws3; append_layout /home/chad/.config/i3/workspace-3.json'"
+# exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
+exec --no-startup-id "i3-msg workspace '$ws3; append_layout ~/.config/i3/workspace-3.json'"
 
 # Load workspace-2 windows
-exec --no-startup-id xfce4-terminal --title=geog
-exec --no-startup-id xfce4-terminal --title=geogport
-exec --no-startup-id chromium-browser
+# exec --no-startup-id xfce4-terminal --title=geog
+# exec --no-startup-id xfce4-terminal --title=geogport
+# exec --no-startup-id chromium-browser
 # Load workspace-3 windows
 exec --no-startup-id xfce4-terminal --title=git:simulocloud
 exec --no-startup-id xfce4-terminal --title=vim:simulocloud
