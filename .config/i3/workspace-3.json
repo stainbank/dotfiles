@@ -1,121 +1,111 @@
 // vim:ts=4:sw=4:et
 {
     // this is a manually added container to restore the vertical split
-    "layout": "splitv",
+    "layout": "splith",
     "percent": 0.5,
     "type": "con",
     "nodes": [
 
         {
-            // splith split container with 2 children
+            // stacked split container with 2 children
             "border": "normal",
             "floating": "auto_off",
-            "layout": "splith",
-            "percent": 1,
+            "layout": "stacked",
+            "percent": 0.5,
             "type": "con",
             "nodes": [
                 {
-                    // stacked split container with 2 children
                     "border": "normal",
+                    "current_border_width": 2,
                     "floating": "auto_off",
-                    "layout": "stacked",
+                    "geometry": {
+                       "height": 387,
+                       "width": 658,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "L1",
                     "percent": 0.5,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 387,
-                               "width": 658,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "git:simulocloud",
-                            "percent": 0.5,
-                            "swallows": [
-                               {
-                               "class": "^Xfce4\\-terminal$",
-                               "title": "^git\\:simulocloud$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 387,
-                               "width": 658,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "vim:simulocloud",
-                            "percent": 0.5,
-                            "swallows": [
-                               {
-                               "class": "^Xfce4\\-terminal$",
-                               "title": "^vim\\:simulocloud$"
-                               }
-                            ],
-                            "type": "con"
-                        }
-                    ]
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "title": "^git\\:simulocloud$"
+                       }
+                    ],
+                    "type": "con"
                 },
                 {
-                    // stacked split container with 2 children
                     "border": "normal",
+                    "current_border_width": 2,
                     "floating": "auto_off",
-                    "layout": "stacked",
+                    "geometry": {
+                       "height": 387,
+                       "width": 658,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "L2",
                     "percent": 0.5,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 387,
-                               "width": 658,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "py.test:tests",
-                            "percent": 0.5,
-                            "swallows": [
-                               {
-                               "class": "^Xfce4\\-terminal$",
-                               "title": "^py\\.test\\:tests$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            "border": "normal",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 387,
-                               "width": 658,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "vim:tests",
-                            "percent": 0.5,
-                            "swallows": [
-                               {
-                               "class": "^Xfce4\\-terminal$",
-                               "title": "^vim\\:tests$"
-                               }
-                            ],
-                            "type": "con"
-                        }
-                    ]
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "title": "^vim\\:simulocloud$"
+                       }
+                    ],
+                    "type": "con"
                 }
             ]
-        } 
+        },        
+        {
+            // stacked split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "stacked",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 387,
+                       "width": 658,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "R1",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "title": "^py.test\\:tests$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 387,
+                       "width": 658,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "R2",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Xfce4\\-terminal$",
+                       "title": "^vim\\:tests$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
 
     ]
 }
