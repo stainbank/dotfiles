@@ -171,6 +171,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Resize screen
+exec xrandr --output VGA-0 --mode 1920x1080
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {   
@@ -184,8 +187,8 @@ bar {
 exec --no-startup-id feh --bg-scale /home/chad/Pictures/glitch-forest-road.jpg
 
 # Load workspace layouts
-exec --no-startup-id "i3-msg workspace '$ws2; append_layout /home/chad/.config/i3/workspace-2.json'"
-exec --no-startup-id "i3-msg workspace '$ws3; append_layout /home/chad/.config/i3/workspace-3.json'"
+exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
+exec --no-startup-id "i3-msg workspace '$ws3; append_layout ~/.config/i3/workspace-3.json'"
 
 # Load workspace-2 windows
 exec --no-startup-id xfce4-terminal --title=geog
