@@ -184,7 +184,7 @@ bar {
 }
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale /home/chad/Pictures/glitch-forest-road.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/glitch-forest-road.jpg
 
 # Load workspace layouts
 exec --no-startup-id "i3-msg workspace '$ws2; append_layout ~/.config/i3/workspace-2.json'"
