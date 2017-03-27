@@ -11,7 +11,7 @@
 TIME=$(date "+%Y-%m-%d_%H-%M-%S")
 DIR=~/dotfiles # dotfiles directory
 OLDDIR=~/dotfiles_old_"$TIME" # old dotfiles backup directory
-FILES=(.bashrc .config .profile .vimrc) # list of files/folders to symlink in homedir
+FILES=(.bashrc .config/* .profile .vimrc) # list of files/folders to symlink in homedir
 
 ##########
 
